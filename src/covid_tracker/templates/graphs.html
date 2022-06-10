@@ -1,0 +1,41 @@
+{% extends 'navbar.html' %}
+{% block content %}
+<div class = "row">
+    <div class="card mx" style="width: 12%; background-color: black; color: red;" id = "active">
+        <div class="card-body">
+          <h5 class="card-title">Percent of People Who Have Contracted The Virus World Wide</h5>
+          <p class="card-text">{{ confirmed_statistic }}</p>
+          
+        </div>
+      </div>
+      <div class="card mx" style="width: 12%; background-color: black; color: red;" id = "deaths">
+        <div class="card-body">
+          <h5 class="card-title">Death Rate</h5>
+          <p class="card-text">{{ death_rate }}</p>
+          
+        </div>
+      </div>
+    <div class="card mx" style="width: 12%; background-color: black; color: red;" id = "recovered">
+      <div class="card-body">
+        <h5 class="card-title">Total Recovered</h5>
+        <p class="card-text">{{ recovered }}</p>
+        
+      </div>
+    </div>
+    <div class="card mx" style="width: 12%; background-color: black; color: red;" id = "confirmed">
+      <div class="card-body">
+        <h5 class="card-title">Confirmed Cases</h5>
+        <p class="card-text">{{ confirmed }}</p>
+        
+      </div>
+</div>
+<div class="card mx" style="width: 48%; background-color: black; color: red;" id = "confirmed">
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text">{{ confirmed }}</p>
+    
+  </div>
+</div>
+</div>
+</div>
+{% endblock %}
